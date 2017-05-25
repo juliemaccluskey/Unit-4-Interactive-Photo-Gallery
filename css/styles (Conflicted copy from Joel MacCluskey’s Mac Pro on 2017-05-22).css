@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/*gallery styles--------------------------------------------*/
+
+body {
+	background: black;
+	padding: 0;
+	position: relative;
+	
+}
+
+input::placeholder {
+color: #b4b4b4;}
+
+.chocolat-parent {
+   width: 90%;
+   margin: 0 auto;
+   height: auto;
+}
+
+
+img {
+	float: left;
+	max-width: 100%;
+	width: 45%;
+	height: auto;
+	margin: 2%;
+}
+
+a {
+	text-decoration: none;
+	height: 100%;
+}
+
+
+/*search styles---------------------------------------------------*/
+
+/*media queries---------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+	
+	img {
+		width: 29.3%;
+	}
+	
+	.chocolat-wrapper .chocolat-left {
+		width: 75px;
+		height: 125px;
+	}
+	
+	.chocolat-wrapper .chocolat-right {
+		width: 75px;
+		height: 125px;
+	}
+	
+	.chocolat-wrapper .chocolat-close {
+		width: 75px;
+		height: 75px;
+	}
+	
+	.chocolat-wrapper .chocolat-bottom {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	
+	img {
+		width: 21%;
+	}
+	
+	.chocolat-wrapper .chocolat-left {
+		width: 100px;
+		height: 150px;
+	}
+	
+	.chocolat-wrapper .chocolat-right {
+		width: 100px;
+		height: 150px;
+	}
+	
+	.chocolat-wrapper .chocolat-close {
+		width: 100px;
+		height: 100px
+}
+
+

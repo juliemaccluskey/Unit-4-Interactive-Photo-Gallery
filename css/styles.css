@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/*gallery styles--------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+html { 
+  background: url(../img/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	padding: 0;
+	position: relative;	
+}
+
+.chocolat-parent {
+   width: 90%;
+   margin: 0 auto;
+   height: auto;
+}
+
+
+img {
+	float: left;
+	max-width: 100%;
+	width: 45%;
+	height: auto;
+	margin: 2%;
+}
+
+a {
+	text-decoration: none;
+	height: 100%;
+}
+
+a img {
+	border: 4px solid #383838;
+	border-radius: 1%;
+	
+}
+
+/*search styles----------------------------------------------*/
+
+input {
+	width: 60%;
+	margin: 10% 20% 8%;
+	box-shadow: inset 0px 0px 0px rgba(0,0,0,0.5);
+	font-family: helvetica neue;
+	font-size: .7em;
+	height: 20px;
+	border-radius: 1%;
+}
+
+input::placeholder {
+color: #b4b4b4;
+}
+
+
+
+/*media queries---------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+	
+/*	gallery styles------------------------*/
+	img {
+		width: 29.3%;
+	}
+	
+	input {
+		margin: 5% 7% 5% 52%;
+		width: 40%;
+		font-size: .85em;
+		
+	}
+	
+/*	lightbox styles----------------------*/
+	
+	.chocolat-wrapper .chocolat-left {
+		width: 75px;
+		height: 125px;
+	}
+	
+	.chocolat-wrapper .chocolat-right {
+		width: 75px;
+		height: 125px;
+	}
+	
+	.chocolat-wrapper .chocolat-close {
+		width: 90px;
+		height: 90px;
+		background:url(../img/close.png) 50% 50% no-repeat;
+	}
+	
+	.chocolat-wrapper .chocolat-bottom {
+		font-size: 14px;
+	}
+	
+}
+
+@media screen and (min-width: 1024px) {
+	
+/*	gallery styles----------------------*/
+	
+	img {
+		width: 21%;
+	}
+	
+	input {
+		width: 30%;
+		height: 25px;
+		margin-left: 63%;
+		font-size: 1em;
+	}
+	
+/*	lightbox styles----------------------*/
+	
+	.chocolat-wrapper .chocolat-left {
+		width: 100px;
+		height: 150px;
+	}
+	
+	.chocolat-wrapper .chocolat-right {
+		width: 100px;
+		height: 150px;
+	}
+	
+	
+	
+
+
+}
